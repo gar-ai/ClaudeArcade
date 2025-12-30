@@ -1,0 +1,165 @@
+{
+  "servers": [
+    {
+      "id": "filesystem",
+      "name": "Filesystem",
+      "description": "Read and write files on your local filesystem",
+      "command": "npx",
+      "args": ["-y", "@anthropic/mcp-server-filesystem"],
+      "category": "core",
+      "official": true,
+      "icon": "folder"
+    },
+    {
+      "id": "memory",
+      "name": "Memory",
+      "description": "Persistent memory storage for Claude",
+      "command": "npx",
+      "args": ["-y", "@anthropic/mcp-server-memory"],
+      "category": "core",
+      "official": true,
+      "icon": "brain"
+    },
+    {
+      "id": "puppeteer",
+      "name": "Puppeteer",
+      "description": "Browser automation and web scraping",
+      "command": "npx",
+      "args": ["-y", "@anthropic/mcp-server-puppeteer"],
+      "category": "integrations",
+      "official": true,
+      "icon": "globe"
+    },
+    {
+      "id": "fetch",
+      "name": "Fetch",
+      "description": "Make HTTP requests to external APIs",
+      "command": "npx",
+      "args": ["-y", "@anthropic/mcp-server-fetch"],
+      "category": "integrations",
+      "official": true,
+      "icon": "download"
+    },
+    {
+      "id": "brave-search",
+      "name": "Brave Search",
+      "description": "Web search using Brave Search API",
+      "command": "npx",
+      "args": ["-y", "@anthropic/mcp-server-brave-search"],
+      "category": "integrations",
+      "official": true,
+      "icon": "search",
+      "requiresEnv": ["BRAVE_API_KEY"]
+    },
+    {
+      "id": "google-maps",
+      "name": "Google Maps",
+      "description": "Location search and mapping",
+      "command": "npx",
+      "args": ["-y", "@anthropic/mcp-server-google-maps"],
+      "category": "integrations",
+      "official": true,
+      "icon": "map",
+      "requiresEnv": ["GOOGLE_MAPS_API_KEY"]
+    },
+    {
+      "id": "github",
+      "name": "GitHub",
+      "description": "GitHub repository and issue management",
+      "command": "npx",
+      "args": ["-y", "@anthropic/mcp-server-github"],
+      "category": "integrations",
+      "official": true,
+      "icon": "github",
+      "requiresEnv": ["GITHUB_TOKEN"]
+    },
+    {
+      "id": "gitlab",
+      "name": "GitLab",
+      "description": "GitLab repository management",
+      "command": "npx",
+      "args": ["-y", "@anthropic/mcp-server-gitlab"],
+      "category": "integrations",
+      "official": true,
+      "icon": "gitlab",
+      "requiresEnv": ["GITLAB_TOKEN"]
+    },
+    {
+      "id": "slack",
+      "name": "Slack",
+      "description": "Slack workspace integration",
+      "command": "npx",
+      "args": ["-y", "@anthropic/mcp-server-slack"],
+      "category": "integrations",
+      "official": true,
+      "icon": "message",
+      "requiresEnv": ["SLACK_BOT_TOKEN"]
+    },
+    {
+      "id": "sqlite",
+      "name": "SQLite",
+      "description": "SQLite database access",
+      "command": "npx",
+      "args": ["-y", "@anthropic/mcp-server-sqlite"],
+      "category": "utilities",
+      "official": true,
+      "icon": "database"
+    },
+    {
+      "id": "postgres",
+      "name": "PostgreSQL",
+      "description": "PostgreSQL database access",
+      "command": "npx",
+      "args": ["-y", "@anthropic/mcp-server-postgres"],
+      "category": "utilities",
+      "official": true,
+      "icon": "database",
+      "requiresEnv": ["POSTGRES_URL"]
+    },
+    {
+      "id": "sentry",
+      "name": "Sentry",
+      "description": "Error tracking and monitoring",
+      "command": "npx",
+      "args": ["-y", "@anthropic/mcp-server-sentry"],
+      "category": "utilities",
+      "official": true,
+      "icon": "bug",
+      "requiresEnv": ["SENTRY_AUTH_TOKEN"]
+    },
+    {
+      "id": "time",
+      "name": "Time",
+      "description": "Current time and timezone utilities",
+      "command": "npx",
+      "args": ["-y", "@anthropic/mcp-server-time"],
+      "category": "utilities",
+      "official": true,
+      "icon": "clock"
+    },
+    {
+      "id": "everything",
+      "name": "Everything",
+      "description": "Testing server with all MCP capabilities",
+      "command": "npx",
+      "args": ["-y", "@anthropic/mcp-server-everything"],
+      "category": "utilities",
+      "official": true,
+      "icon": "box"
+    }
+  ],
+  "categories": {
+    "core": {
+      "name": "Core",
+      "description": "Essential MCP servers for basic functionality"
+    },
+    "integrations": {
+      "name": "Integrations",
+      "description": "Connect to external services and APIs"
+    },
+    "utilities": {
+      "name": "Utilities",
+      "description": "Helpful tools and utilities"
+    }
+  }
+}
